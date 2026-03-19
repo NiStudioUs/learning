@@ -33,7 +33,13 @@ function App() {
       tags: ['HTML', 'CSS', 'Responsive', 'Glassmorphism'],
       path: './apps/chapter-1/index.html',
     },
-    // Future apps can be added here
+    {
+      id: 'chapter-2',
+      title: 'Chapter 2: HR Portal',
+      description: 'A minimalist, responsive HR management portal built with React, Vite, and TypeScript. Features role-based access control and streamlined local state persistence workflows.',
+      tags: ['React', 'TypeScript', 'Material 3', 'RBAC'],
+      path: './apps/chapter-2/index.html',
+    }
   ];
 
   return (

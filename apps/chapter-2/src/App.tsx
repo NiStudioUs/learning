@@ -1,5 +1,4 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Box } from '@mui/material';
 import AuthPage from './AuthPage';
 import HRDashboard from './HRDashboard';
@@ -7,7 +6,7 @@ import EmployeeDashboard from './EmployeeDashboard';
 
 function App() {
   return (
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <HashRouter>
       <Box sx={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
         <Routes>
           <Route path="/login" element={<AuthPage />} />
@@ -16,7 +15,7 @@ function App() {
           <Route path="*" element={<Navigate to="/login" replace />} />
         </Routes>
       </Box>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

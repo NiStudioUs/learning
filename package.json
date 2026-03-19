@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && mkdir -p dist/apps && cp -r apps/* dist/apps/ || true",
+    "build": "vite build && mkdir -p dist/apps && cp -r apps/chapter-1 dist/apps/ && npm --prefix apps/chapter-2 install && npm --prefix apps/chapter-2 run build && mkdir -p dist/apps/chapter-2 && cp -r apps/chapter-2/dist/* dist/apps/chapter-2/ || true",
     "preview": "vite preview"
   },
   "dependencies": {

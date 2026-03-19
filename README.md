@@ -63,7 +63,15 @@ npm run preview
 
 The deployment script automatically handles both **Static Projects** and **React Projects**. Here is how to create them:
 
-### Option A: Creating a Static Project (e.g., `chapter-2`)
+### 📦 Available Projects
+
+- **[Chapter 2 HR Portal](./apps/chapter-2/README.md)**: A fully-fledged React 18 SPA utilizing Material UI for HR and Employee data management.
+
+*For an in-depth architectural breakdown of Chapter 2, [Read the Walkthrough Document Here](./apps/chapter-2/walkthrough.md).*
+
+### 🛠️ Creating New Projects
+
+### 1. Static HTML Projects (e.g., `chapter-1`)
 If your project is just basic HTML, CSS, and JS files, simply create a folder inside `apps/`:
 ```bash
 mkdir -p apps/chapter-2

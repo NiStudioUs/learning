@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { 
   Container, Typography, Box, Paper, Table, TableBody, TableCell, 
   TableContainer, TableHead, TableRow, Button,
-  AppBar, Toolbar, Tabs, Tab, TextField
+  AppBar, Toolbar, Tabs, Tab, TextField, Alert
 } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
@@ -24,6 +24,7 @@ const EmployeeDashboard: React.FC = () => {
   const [startDate, setStartDate] = useState('');
   const [endDate, setEndDate] = useState('');
   const [reason, setReason] = useState('');
+  const [leaveError, setLeaveError] = useState('');
 
   useEffect(() => {
     // Check Auth
@@ -41,13 +42,20 @@ const EmployeeDashboard: React.FC = () => {
   }, [navigate]);
 
   const handleLogout = () => {
-    localStorage.clear();
+    localStorage.removeItem('auth_role');
+    localStorage.removeItem('auth_user');
     navigate('/login');
   };
 
   const handleApplyLeave = (e: React.FormEvent) => {
     e.preventDefault();
+    setLeaveError('');
     if (!startDate || !endDate || !reason) return;
+    
+    if (new Date(startDate) > new Date(endDate)) {
+      setLeaveError('Start Date cannot be after End Date.');
+      return;
+    }
     
     const newReq: LeaveRequest = {
       id: Date.now().toString(),
@@ -64,6 +72,7 @@ const EmployeeDashboard: React.FC = () => {
     setStartDate('');
     setEndDate('');
     setReason('');
+    setLeaveError('');
     setTabIndex(1); // switch to history tab
   };
 
@@ -140,14 +149,21 @@ const EmployeeDashboard: React.FC = () => {
           <Box component="form" onSubmit={handleApplyLeave} maxWidth="sm" mx="auto">
             <Typography variant="h5" fontWeight="600" mb={3}>Apply for Leave</Typography>
             <Paper elevation={0} sx={{ p: 4 }}>
+              {leaveError && (
+                <Alert severity="error" sx={{ mb: 3, borderRadius: 2 }}>
+                  {leaveError}
+                </Alert>
+              )}
               <TextField 
                 type="date" fullWidth required margin="normal" label="Start Date" 
                 InputLabelProps={{ shrink: true }}
+                inputProps={{ max: endDate || undefined }}
                 value={startDate} onChange={e => setStartDate(e.target.value)} 
               />
               <TextField 
                 type="date" fullWidth required margin="normal" label="End Date" 
                 InputLabelProps={{ shrink: true }}
+                inputProps={{ min: startDate || undefined }}
                 value={endDate} onChange={e => setEndDate(e.target.value)} 
               />
               <TextField 
