@@ -31,7 +31,7 @@ function App() {
       title: 'Chapter 1: KS Foodie',
       description: 'A premium, responsive front-end food ordering web application with a rich \'Zomato-Red\' aesthetic, smooth glassmorphism effects, and infinite scroll.',
       tags: ['HTML', 'CSS', 'Responsive', 'Glassmorphism'],
-      path: '/apps/chapter-1/index.html',
+      path: './apps/chapter-1/index.html',
     },
     // Future apps can be added here
   ];
