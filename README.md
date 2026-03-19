@@ -9,8 +9,8 @@ Welcome to my central Learning Hub! This repository contains various web develop
 ```text
 learning-repo/
 ├── apps/                 # All your individual projects and chapters go here
-│   ├── chapter-1/        # A simple static HTML/CSS project (no package.json)
-│   └── chapter-2/        # A React project (has its own package.json & src/)
+│   ├── chapter-1/        # A simple static HTML/CSS project ("KS Foodie")
+│   └── chapter-2/        # A React HR Portal (Vite + TypeScript + Material 3)
 ├── src/                  # The source code for the top-level Hub Portfolio App
 ├── package.json          # Dependencies for the Hub App
 ├── index.html            # Entry point for the Hub App
