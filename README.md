@@ -2,6 +2,8 @@
 
 Welcome to my central Learning Hub! This repository contains various web development projects, experiments, and courses I am working through. It consists of a top-level React "Hub" portfolio and multiple individual projects nested inside the `apps` directory.
 
+**GitHub Page (Live Hub)**: [https://nistudious.github.io/learning/](https://nistudious.github.io/learning/)
+
 ---
 
 ## 🏗️ Structure & Architecture
@@ -10,7 +12,9 @@ Welcome to my central Learning Hub! This repository contains various web develop
 learning-repo/
 ├── apps/                 # All individual projects and chapters
 │   ├── chapter-1/        # Static HTML/CSS project ("KS Foodie")
-│   └── chapter-2/        # React HR Portal (Vite + TypeScript + Material 3)
+│   ├── chapter-2/        # React HR Portal (Vite + TypeScript + Material 3)
+│   ├── chapter-3/        # Book_A_Taxi (Glassmorphism + Leaflet)
+│   └── chapter-4/        # RecipeVerse (Warm Brutalism + Mock API)
 ├── src/                  # Source code for the top-level Hub Portfolio App
 ├── .agent/               # Agent skills, workflows, and design system
 │   ├── skills/           # Reusable skill definitions
@@ -74,8 +78,10 @@ The deployment script automatically handles both **Static Projects** and **React
 
 - **[Chapter 1: KS Foodie](./apps/chapter-1/README.md)**: A responsive front-end food ordering app with Glassmorphism effects, infinite scroll, and API integration.
 - **[Chapter 2: HR Portal](./apps/chapter-2/README.md)**: A fully-fledged React 18 SPA utilizing Material UI for HR and Employee data management.
+- **[Chapter 3: Book_A_Taxi](./apps/chapter-3/README.md)**: A premium taxi booking application featuring interactive map integration with Leaflet and glassmorphism UI.
+- **[Chapter 4: RecipeVerse](./apps/chapter-4/README.md)**: A full-featured recipe discovery app with 20 rich recipes, live search, and a bold Warm Brutalism design.
 
-*For an in-depth architectural breakdown of Chapter 2, [Read the Walkthrough Document Here](./apps/chapter-2/walkthrough.md).*
+*For in-depth architectural breakdowns, check the walkthroughs in each chapter folder!*
 
 ### 🛠️ Creating New Projects
 

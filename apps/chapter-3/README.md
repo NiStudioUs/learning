@@ -3,6 +3,8 @@
 ## Overview
 A frontend starter code for a taxi ride booking application called "Book_A_Taxi". Built following an Uber-like premium aesthetic, this project provides a multi-page setup and fully functional visual booking flow with interactive maps.
 
+**GitHub Page**: [Live Demo](https://nistudious.github.io/learning/apps/chapter-3/index.html)
+
 ## Key Features
 - **5-Page Navigation Flow**: Home, About, Services, Contact, and Booking
 - **Interactive Map Integration**: Integrated OpenStreetMap using Leaflet and react-leaflet for setting pick-up and drop-off points.

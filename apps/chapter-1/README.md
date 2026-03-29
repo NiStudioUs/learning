@@ -2,6 +2,8 @@
 
 **KS Foodie** is a premium, responsive front-end web application designed to simulate a modern food ordering experience. It combines a rich "Zomato-Red" aesthetic with smooth interactions, glassmorphism effects, and a seamless "Infinite Scroll" food discovery engine.
 
+**GitHub Page**: [Live Demo](https://nistudious.github.io/learning/apps/chapter-1/index.html)
+
 ## 🚀 Key Features
 
 ### 🌟 UX/UI

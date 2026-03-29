@@ -46,6 +46,13 @@ function App() {
       description: 'A premium Uber-like taxi booking application featuring interactive map integration with Leaflet, real-time form validation, and modern glassmorphism UI.',
       tags: ['React', 'TypeScript', 'Leaflet', 'Glassmorphism'],
       path: './apps/chapter-3/index.html',
+    },
+    {
+      id: 'chapter-4',
+      title: 'Chapter 4: RecipeVerse',
+      description: 'A full-featured recipe discovery app with 20 rich recipes, live search, category & cuisine filters, interactive ingredient checklists, and a bold Warm Brutalism design.',
+      tags: ['React', 'TypeScript', 'Neo-Brutalism', 'Mock API'],
+      path: './apps/chapter-4/index.html',
     }
   ];
 

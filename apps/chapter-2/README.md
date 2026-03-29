@@ -5,6 +5,8 @@ This project is a fully responsive, web-based HR Portal application designed to 
 
 The overall objective of this project is to enhance workforce management, reduce administrative burden, and improve the employee experience through a centralized digital solution.
 
+**GitHub Page**: [Live Demo](https://nistudious.github.io/learning/apps/chapter-2/index.html)
+
 ## Key Features
 
 ### 🔐 Authentication System 
