@@ -119,10 +119,13 @@ const apps = [
 
 ### Local Development
 ```bash
-# Hub only
+# Preview the full Hub + built chapters (Recommended for Integration Testing)
+npm run build && npm run preview
+
+# Develop Hub only (Note: Nested React chapters will render blank when navigated to via this server)
 npm run dev
 
-# Specific chapter (React)
+# Develop specific chapter independently (React chapters)
 cd apps/chapter-n && npm run dev
 ```
 

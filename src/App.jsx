@@ -39,6 +39,13 @@ function App() {
       description: 'A minimalist, responsive HR management portal built with React, Vite, and TypeScript. Features role-based access control and streamlined local state persistence workflows.',
       tags: ['React', 'TypeScript', 'Material 3', 'RBAC'],
       path: './apps/chapter-2/index.html',
+    },
+    {
+      id: 'chapter-3',
+      title: 'Chapter 3: Book_A_Taxi',
+      description: 'A premium Uber-like taxi booking application featuring interactive map integration with Leaflet, real-time form validation, and modern glassmorphism UI.',
+      tags: ['React', 'TypeScript', 'Leaflet', 'Glassmorphism'],
+      path: './apps/chapter-3/index.html',
     }
   ];
 

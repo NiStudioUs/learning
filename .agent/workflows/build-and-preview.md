@@ -25,6 +25,7 @@ description: Build and preview the learning repository locally
    ```bash
    npm run preview
    ```
+   > **Note**: Testing the integrated Hub + nested React Chapter apps requires `npm run preview`. The root `npm run dev` server will only serve nested chapter `index.html` files as static assets, resulting in a blank page.
 
 5. **Verify in the browser** that:
    - The Hub page loads and shows all chapter cards
