@@ -49,9 +49,9 @@ function App() {
     },
     {
       id: 'chapter-4',
-      title: 'Chapter 4: RecipeVerse',
-      description: 'A full-featured recipe discovery app with 20 rich recipes, live search, category & cuisine filters, interactive ingredient checklists, and a bold Warm Brutalism design.',
-      tags: ['React', 'TypeScript', 'Neo-Brutalism', 'Mock API'],
+      title: 'Chapter 4: Inventory Management',
+      description: 'An enterprise-grade inventory management system (StockOS) featuring robust offline-first architecture, multi-role RBAC, transaction pipelines, and a modern "Stealth Dark" glass UI.',
+      tags: ['React', 'TypeScript', 'State Management', 'Glassmorphism'],
       path: './apps/chapter-4/index.html',
     }
   ];
